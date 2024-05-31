@@ -6,7 +6,6 @@ metadata:
 spec:
   project: default
   source:
-    chart: prometheus-community
     repoURL: https://github.com/realexcel2021/app-of-apps
     path: umbrella-chart
     targetRevision: HEAD
