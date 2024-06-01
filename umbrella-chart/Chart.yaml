@@ -29,5 +29,5 @@ dependencies:
   repository: https://prometheus-community.github.io/helm-charts
 
 - name: loki-stack
-  version: 6.6.2
+  version: 2.10.2
   repository: https://grafana.github.io/helm-charts
