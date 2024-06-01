@@ -47,6 +47,11 @@ module "eks" {
       instance_types = ["t2.medium"]
       capacity_type  = "SPOT"
       use_name_prefix = false
+      iam_role_name = "realworld-ng-role"
+      iam_role_use_name_prefix = false
+      iam_role_additional_policies = {
+        ebs_policy = "arn:aws:iam::aws:policy/service-role/AmazonEBSCSIDriverPolicy"
+      }
     }
   }
 

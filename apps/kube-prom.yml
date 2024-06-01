@@ -1,0 +1,13 @@
+project: default
+
+source: 
+  repoURL: github.com/realexcel2021/app-of-apps
+  path: umbrella-chart
+  targetRevision: HEAD
+  helm:
+    valuesFiles:
+      - values.yaml
+
+destination:
+  namespace: default
+  server: https://kubernetes.default.svc
