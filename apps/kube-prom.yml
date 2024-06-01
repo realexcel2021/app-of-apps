@@ -9,6 +9,9 @@ spec:
     name: ''
     namespace: monitoring
     server: 'https://kubernetes.default.svc'
+  syncPolicy:
+    syncOptions:
+    - Replace=true
   source:
     path: umbrella-chart
     repoURL: 'https://github.com/realexcel2021/app-of-apps'
