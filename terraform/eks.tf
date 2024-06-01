@@ -38,13 +38,15 @@ module "eks" {
   }
 
   eks_managed_node_groups = {
+
     realworld-ng = {
       min_size     = 1
-      max_size     = 2
-      desired_size = 1
+      max_size     = 4
+      desired_size = 3
 
       instance_types = ["t2.medium"]
       capacity_type  = "SPOT"
+      use_name_prefix = false
     }
   }
 
