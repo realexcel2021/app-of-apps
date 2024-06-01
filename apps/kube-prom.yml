@@ -1,4 +1,11 @@
-project: default
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: kube-prom
+  namespace: default
+
+spec: 
+  project: default
 
 source: 
   repoURL: github.com/realexcel2021/app-of-apps
@@ -9,5 +16,5 @@ source:
       - values.yaml
 
 destination:
-  namespace: default
+  namespace: monitoring
   server: https://kubernetes.default.svc
